@@ -6,10 +6,13 @@ public class Main {
 
     public static void main(String[] args)
     {
-        Scanner name = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
         System.out.println("What is your name?");
-        String reply = name.nextLine();
-        System.out.println("Nice to meet you " + reply + "!");
-        name.close();
+        String name = input.nextLine();
+        System.out.println("Nice to meet you " + name + "!");
+
+        System.out.println("What is your age?");
+        String age = input.nextLine();
+        System.out.println("Only " + age + "?");
     }
 }
